@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    margin: 0px auto;
+    display: block;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.record-input, .record-display{
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 30px 0;
+    box-shadow: 0px 0px 6px 0px rgba(8, 0, 8, 1);
+}
+
+.record-input > h2, .record-display > h2{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.record-input{
+    color: #000;
+    background-color: #f0f0f0;
+}
+.record{
+    background-color: cornflowerblue;
+    color: #fff;
+    position: relative;
+}
+
+/* form starts here */
+
+.entry-form{
+    padding: 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+form label{
+    font-weight: 700;
+}
+form label, form input{
+    display: block;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+}
+
+form input[type = "text"], 
+form input[type = "number"],
+form input[type = "file"]{
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 18px;
+    margin: 12px 0;
+}
+
+.btns{
+    display: flex;
+}
+
+button{
+    display: block;
+    justify-content: center;
+    width: 160px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #1361b4;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+#result-container{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    margin: 0px auto;
+    background-color: #1361b4;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 35px;
+    margin-bottom: 8px;
+}
+
+.info img{
+    border-radius: 12px;
+    width: 100px;
+    margin-bottom: 8px;
+    margin-left: 4.3rem;
+}
+
+
+@media screen and (min-width: 421px) and (max-width: 475px){
+   .info img{
+    margin-left: 5.4rem;
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 520px){
+    .info img{
+     margin-left: 7.4rem;
+   }
+}
+
+@media screen and (min-width: 521px) and (max-width: 575px){
+    .info img{
+     margin-left: 8.2rem;
+   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 630px){
+    .info img{
+     margin-left: 9.4rem;
+   }
+}
+

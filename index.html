@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Phone Book</title>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="record-input">
+
+            <h2>Contact Details</h2>
+
+             <div class="entry-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="name">Email:</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+
+                    <label for="contact-num">Contact Number:</label>
+                    <input type="text" id="contact-num" placeholder="Enter your contact">
+
+                    <label for="image">Add image:</label>
+                    <input type="file" id="image-input">
+                    <img id="preview-image">
+                </form>
+            </div>  
+
+                <div class="btns">
+
+                    <button type="submit" id="submit-btn">
+                        Add Contact
+                    </button>
+
+                    <button type="button" id="view-contact-btn">
+                        View Contact
+                    </button>
+
+                </div>
+        </div>
+    </div> 
+
+    <div id="result-container">
+
+
+
+        <div class="btns-2">
+
+            <button type="submit" id="create-contact-btn">
+                Create New Contact
+            </button>
+
+        </div>
+    </div>
+
+
+        
+    <script src="apps.js"></script>
+</body>
+</html>
