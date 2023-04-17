@@ -8,8 +8,10 @@
 
 .main-container{
     margin: 0px auto;
+    overflow: auto;
     display: block;
     padding: 25px;
+    max-width: 40rem;
     border-radius: 5px;
 }
 
@@ -59,7 +61,8 @@ form label, form input{
 
 form input[type = "text"], 
 form input[type = "number"],
-form input[type = "file"]{
+form input[type = "file"],
+form input[type = "tel"]{
     color: #000;
     font-family: inherit;
     font-size: 16px;
@@ -94,18 +97,18 @@ button:hover{
 
 #result-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: auto;
     display: none;
-    justify-content: center;
-    margin: 0px auto;
     background-color: #1361b4;
     padding: 25px;
-    border-radius: 5px;
+    
 }
 
 .info{
     display: flex;
     flex-direction: column;
+    max-width: 22rem;
     background-color: #FFF;
     text-align: center;
     justify-content: center;
@@ -122,27 +125,4 @@ button:hover{
 }
 
 
-@media screen and (min-width: 421px) and (max-width: 475px){
-   .info img{
-    margin-left: 5.4rem;
-  }
-}
-
-@media screen and (min-width: 476px) and (max-width: 520px){
-    .info img{
-     margin-left: 7.4rem;
-   }
-}
-
-@media screen and (min-width: 521px) and (max-width: 575px){
-    .info img{
-     margin-left: 8.2rem;
-   }
-}
-
-@media screen and (min-width: 576px) and (max-width: 630px){
-    .info img{
-     margin-left: 9.4rem;
-   }
-}
 
