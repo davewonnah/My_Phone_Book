@@ -70,7 +70,7 @@ function addInfo() {
   // Create a new element to display the info
   const infoDiv = document.createElement('div');
   infoDiv.classList.add('info');
-  
+
   // Add the info to the new element
   const infoHtml = `
     <img src="${URL.createObjectURL(info.image)}" alt="${info.name}">
@@ -78,12 +78,20 @@ function addInfo() {
     <p>Email: ${info.email}</p>
     <p>Address: ${info.address}</p>
     <p>Contact: ${info.contact}</p>
+    <button class="delete-btn">Delete Contact</button>
   `;
   infoDiv.innerHTML = infoHtml;
 
   // Add the new element to the result container
   resultContainer.appendChild(infoDiv);
+
+  // Add event listener to the delete button
+  const deleteBtn = infoDiv.querySelector('.delete-btn');
+  deleteBtn.addEventListener('click', function() {
+    resultContainer.removeChild(infoDiv);
+  });
 }
+
 
 
 

@@ -33,7 +33,7 @@
     background-color: #f0f0f0;
 }
 .record{
-    background-color: cornflowerblue;
+    background-color: #1361b4;
     color: #fff;
     position: relative;
 }
@@ -97,7 +97,6 @@ button:hover{
 
 #result-container{
     display: flex;
-    flex-direction: row;
     overflow: auto;
     display: none;
     background-color: #1361b4;
@@ -109,6 +108,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     max-width: 22rem;
+    overflow: auto;
     background-color: #FFF;
     text-align: center;
     justify-content: center;
@@ -119,9 +119,9 @@ button:hover{
 
 .info img{
     border-radius: 12px;
-    width: 100px;
+    max-width: 100px;
     margin-bottom: 8px;
-    margin-left: 4.3rem;
+    margin-left: 5.4rem;
 }
 
 
